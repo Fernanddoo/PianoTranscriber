@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  piano-magic:
+    build: .
+    container_name: piano_transcriber
+    volumes:
+      - ./outputs:/app/outputs
+      - ./app:/app/app
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+
+# tive muito problema com libs, decidi fazer tudo em docker para facilitar para rodar
+# só dar um docker-compose up e deve ir

@@ -1,0 +1,8 @@
+streamlit
+yt-dlp
+demucs        # Separar a musica
+basic-pitch   # (Spotify Audio-to-MIDI)
+pretty_midi   # Para manipular e visualizar o MIDI gerado
+numpy<2
+matplotlib   
+ffmpeg-python
